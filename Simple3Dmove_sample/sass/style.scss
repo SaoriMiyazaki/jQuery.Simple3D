@@ -1,0 +1,111 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Artifika);
+
+/*---------------------
+	 reset
+----------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p
+,blockquote,th,td {
+     margin: 0;
+     padding: 0;
+     text-align: justify;
+     text-justify: inter-ideograph;
+}
+html {
+     overflow-y: scroll;  
+}
+h1,h2,h3,h4,h5,h6 {
+     font-size: 100%;
+     font-weight: normal;
+}
+ol,ul {
+     list-style: none;
+}
+fieldset,img {
+     border: 0;
+}
+table {
+     border-collapse: collapse;
+     border-spacing: 0;
+}
+caption,th {
+     text-align: left;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+     font-style: normal;
+}
+body { background:  url(../images/bg.png) ; color: #333; font-size: 62.5%;font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo","ＭＳ Ｐゴシック","MS PGothic",Sans-Serif; line-height: 1.5; }
+/*---------------------
+ Simple3Dmove_Sample 
+----------------------- */
+$pink: #EAA2C6;
+$pink2: #F6E4ED;
+#container{
+	width: 100%;
+}
+#simple3D {
+	margin: 0 0 30px;
+	max-width: 750px;
+	height: 450px;
+	border: dotted 5px $pink;
+	border-radius: 12px;
+	background: lighten(#eee, 10%);
+	li {
+		display: block;
+		width: 850px;
+		height: 600px;
+	}
+}
+#content{
+	margin: 0 auto;
+	padding: 0 0 50px;
+	max-width: 750px;
+	width: 70%;
+	font-size: 1.6em;
+}
+#header{
+	padding: 50px 0 20px ;
+	h1,p{
+		margin: 0 0 10px;
+		text-align: center;
+		font-size: 35px;
+		font-family: 'Artifika', serif;
+	}
+}
+section{
+	position: relative;
+	margin: 0 0 30px;
+	.dog{
+		position: absolute;
+		top:-50px;
+		right: -50px;
+		width: 150px;
+		height: 150px;
+	}
+	p {
+     	margin: 0 0 1em 0;
+	}
+}
+.prevbtn{
+		margin: 30px 0;
+		text-align: center;
+		a{
+			display: block;
+			padding: 15px ;
+			border: dotted 5px $pink;
+			border-radius: 8px;
+			background: $pink2;
+			color: darken($pink, 10%);
+			text-decoration: none;
+			text-shadow: 1px 1px 0 lighten($pink2, 20%);
+		}
+		a:hover{
+			background: $pink;
+			color: $pink2;
+			text-shadow: 1px 1px 0 darken($pink, 20%);
+		}
+	}
+#footer p{
+	text-align: center;
+}
