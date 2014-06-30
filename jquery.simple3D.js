@@ -76,7 +76,7 @@
 					cursorY = (cursorY > parentHeight) ? parentHeight : cursorY ;							
 					var centerY = (cursorY / parentHeight * offset_y) - offset_y / 2;
 				 
-					for (var i=1; i<= itemChild.length; i++){				
+					for (var i=1, n=itemChild.length; i<=n; i++){				
 						
 						if( opts.bgImage == false){							
 							

@@ -44,7 +44,7 @@
 				});
 				
 			// 	background true だったとき
-			}　else {	
+			} else {	
 				thisObj.css({
 					"overflow": "hidden"
 				});
@@ -54,7 +54,7 @@
 					"top": itemChild.position().top,
 					"background-position": "0px 0px"
 				});
-			}　//　background true だったとき終わり 
+			} // background true だったとき終わり 
 			if (opts.moveX > 5 || opts.moveY > 5) return false;
 			var sort = [5, 4, 3, 2, 1];
 			opts.moveX = sort[parseFloat(opts.moveX)-1];
@@ -76,7 +76,7 @@
 					cursorY = (cursorY > parentHeight) ? parentHeight : cursorY ;							
 					var centerY = (cursorY / parentHeight * offset_y) - offset_y / 2;
 				 
-					for (var i=1; i<= itemChild.length; i++){				
+					for (var i=1, n=itemChild.length; i<=n; i++){				
 						
 						if( opts.bgImage == false){							
 							
@@ -104,7 +104,7 @@
 							newLeft = (opts.reverseX == false) ? newLeft : -newLeft ;															
 							// Yの移動値算出	
 							var bgPosY = parseFloat($(itemChild[i-1]).css('top'));
-							var newTop = centerY * (i / itemChild.length) - offset_y / 2　;
+							var newTop = centerY * (i / itemChild.length) - offset_y / 2 ;
 							newTop = Math.floor( (bgPosY + newTop)  / opts.moveY  );
 							newTop = (opts.reverseY == false) ? newTop : -newTop ;
 							
